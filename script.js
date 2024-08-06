@@ -64,3 +64,6 @@ for (let i = 0; i < 1000; i++) {
     let pos = getRandomLatLng(map);
     L.marker(pos).addTo(markerClusterLayer);
 }
+
+//Add the cluster to the map
+markerClusterLayer.addTo(map);
