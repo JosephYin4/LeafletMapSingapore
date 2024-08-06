@@ -13,3 +13,18 @@ singaporeMarker.bindPopup("<p>Singapore</p>")
 singaporeMarker.addEventListener('click', function(){
     alert("Singapore");
 })
+
+let circle = L.circle([1.35166526, 103.773663572], {
+    color: 'red',
+    fillColor:"orange",
+    fillOpacity:0.5,
+    radius: 500
+})
+
+// add it to the map
+circle.addTo(map);
+
+//create a Zoo object and add it to the map
+let zooMarker = L.marker([1.4026483894, 103.788013515]);
+zooMarker.addTo(map);
+zoo.bindPopup("<p>Zoo</p>")
