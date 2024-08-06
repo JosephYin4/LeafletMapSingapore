@@ -27,7 +27,7 @@ circle.addTo(map);
 //create a Zoo object and add it to the map
 let zooMarker = L.marker([1.4026483894, 103.788013515]);
 zooMarker.addTo(map);
-zoo.bindPopup("<p>Zoo</p>")
+zoo.bindPopup("<p>Zoo</p>");
 
 // the map argument refers to the map which we create using Leaflet
 function getRandomLatLng(map) {
