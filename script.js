@@ -8,3 +8,8 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',
 //create a singaporeMarker object and add it to the map
 let singaporeMarker = L.marker([1.29, 103.85]);
 singaporeMarker.addTo(map);
+singaporeMarker.bindPopup("<p>Singapore</p>")
+
+singaporeMarker.addEventListener('click', function(){
+    alert("Singapore");
+})
